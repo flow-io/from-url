@@ -1,0 +1,58 @@
+{
+  "name": "flow-from-url",
+  "version": "0.0.0",
+  "description": "Provides a stream interface for fetching a remote resource.",
+  "author": {
+    "name": "Athan Reines",
+    "email": "kgryte@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Athan Reines",
+      "email": "kgryte@gmail.com"
+    }
+  ],
+  "scripts": {
+    "test": "./node_modules/.bin/mocha",
+    "test-cov": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
+    "coveralls": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coveralls/coverage --report lcovonly -- -R spec && cat ./reports/coveralls/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./reports/coveralls"
+  },
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/flow-io/from-url.git"
+  },
+  "keywords": [
+    "stream",
+    "flow",
+    "flow.io",
+    "url",
+    "uri",
+    "resource",
+    "readable",
+    "readstream",
+    "from",
+    "source",
+    "remote"
+  ],
+  "bugs": {
+    "url": "https://github.com/flow-io/from-url/issues"
+  },
+  "dependencies": {
+    "minimist": "^1.1.1",
+    "readable-stream": "^1.0.33",
+    "request": "^2.57.0",
+    "utils-merge2": "^1.0.0",
+    "validate.io-object": "^1.0.4",
+    "validate.io-positive": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "3.x.x",
+    "mocha": "2.x.x",
+    "coveralls": "^2.11.1",
+    "istanbul": "^0.3.0",
+    "jshint": "2.x.x",
+    "jshint-stylish": "^1.0.0"
+  },
+  "license": "MIT"
+}

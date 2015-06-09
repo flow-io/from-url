@@ -1,0 +1,10 @@
+
+Usage: flow-from-url [options] <uri>
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --uri [uri]           URI.
+         --interval [ms]       Poll interval (in milliseconds).
+
